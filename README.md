@@ -61,8 +61,7 @@ The implementation intentionally simulates these interactions to demonstrate MCP
 ```bash
 python run_demo.py
 ```
-or
-Run demo.ipynb for a quick walkthrough
+- Or open demo.ipynb for a step-by-step walkthrough.
 ---
 
 ## Limitations
