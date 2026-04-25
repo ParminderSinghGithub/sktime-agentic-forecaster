@@ -1,2 +1,2 @@
-def build_sktime_pipeline(components: list):
-    return components
+def build_pipeline(estimator_name: str) -> list[str]:
+    return ["Imputer", estimator_name]
