@@ -5,6 +5,9 @@ sktime-agentic-forecaster is a minimal agentic forecasting prototype. It convert
 
 This demonstrates how agentic systems can perform transparent, auditable decision-making rather than relying on opaque or trial-and-error workflows.
 
+This prototype focuses on the agent reasoning layer rather than model execution.
+The design mirrors MCP workflows and can be extended to real sktime pipelines.
+
 ---
 
 ## How it works
@@ -54,6 +57,12 @@ This project mirrors MCP tool concepts such as:
 - pipeline execution
 
 The implementation intentionally simulates these interactions to demonstrate MCP-style agent behavior without external dependencies.
+
+This project was built alongside contributions to sktime-mcp:
+- [PR #212](https://github.com/sktime/sktime-mcp/pull/212) – Align documentation with `list_estimators(query=...)` MCP interface
+- [PR #216](https://github.com/sktime/sktime-mcp/pull/216) – Fix pipeline validation to disallow forecaster→forecaster chains
+- [PR #225](https://github.com/sktime/sktime-mcp/pull/225) – Replace hardcoded `/tmp` paths with cross-platform temp directory
+- [PR #298](https://github.com/sktime/sktime-mcp/pull/298) – Update docs and examples to use `list_estimators` instead of deprecated `search_estimators`
 
 ---
 
